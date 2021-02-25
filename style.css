@@ -67,7 +67,7 @@ footer div.social a.social:not(:last-child) {
 
 footer a.social {
     color: black;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 @media(min-width:580px) {
