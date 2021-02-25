@@ -1,5 +1,6 @@
 body {
-    background-color: #F3F3F3;
+    background-image: url("images/bg.png");
+    background-position: top;
     font-family: 'Lato', sans-serif;
     line-height: 150%;
 }
@@ -29,7 +30,7 @@ header {
 } */
 
 header img.logo {
-    width: 16.625rem;
+    width: 260px;
 }
 
 header p.subtitle {
@@ -42,8 +43,16 @@ div.articles {
     padding: 2.25rem;
     border-radius: 1.75rem;
     text-align: justify;
-    max-width: 28.75rem;
+    max-width: 460px;
     margin: 2.25rem auto;
+}
+
+@media (max-width:460px) {
+    div.articles {
+        width: 100%;
+        border-radius: 0;
+        margin: 2.25rem 0;
+    }
 }
 
 div.articles article:not(:last-child) {
@@ -65,4 +74,13 @@ div.articles article a {
 footer {
     text-align: center;
     margin: 2.25rem auto 3.75rem auto;
+}
+
+footer div.social a.social:not(:last-child) {
+    margin-right: .5rem;
+}
+
+footer a.social {
+    color: black;
+    font-size: 1.25rem;
 }
